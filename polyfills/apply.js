@@ -28,3 +28,5 @@ Function.prototype.myApply = function (context = {}, args = []) {
   context.fn(...args);
   delete context.fn;
 };
+
+printFullName.myApply(name, ['Los Angeles', 'USA']); // Output: john doe from Los Angeles, USA
